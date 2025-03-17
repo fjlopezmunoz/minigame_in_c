@@ -23,7 +23,7 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
    - Descarga desde la web de [Codeblocks](https://www.codeblocks.org/downloads/binaries/) el instalador que incluya MinGW (`codeblocks-X.Xmingw-setup.exe`) y sigue el proceso de instalación.
 
 2. **Descargar y configurar SDL2:**
-   - Descarga la versión de [SDL2 para Windows](SDL2-devel-2.X.X-mingw.tar.gz) (`SDL2-devel-X.X.X-mingw.tar.gz`) y descomprímela.
+   - Descarga la versión de [SDL2 para Windows](SDL2-devel-2.X.X-mingw.tar.gz) (`SDL2-devel-2.X.X-mingw.tar.gz`) y descomprímela.
    - Copia el archivo `SDL2.dll` (ubicado en `SDL2-2.X.X\i686-w64-mingw32\bin`) a las siguientes carpetas:
      - `C:\Windows\System32`
      - `C:\Windows\SysWOW64`
