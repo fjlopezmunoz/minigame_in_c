@@ -1,5 +1,7 @@
 # MiniProyecto-Videojuego en C con SDL2 "Piedras Picudas" - Instrucciones de Compilación
 
+![Sección Ayuda](./ayuda.bmp)
+
 Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux**.
 
 ## Requisitos
