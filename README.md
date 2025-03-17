@@ -1,6 +1,6 @@
 # MiniProyecto-Videojuego en C con SDL2 "Piedras Picudas" - Instrucciones de Compilación
 
-Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux (Fedora)**.
+Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux**.
 
 ## Requisitos
 
@@ -10,7 +10,7 @@ Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se deta
 
 ### Linux (Fedora)
 - **Code::Blocks** (opcional, también se puede compilar desde terminal).
-- **SDL2** y **SDL2-devel** (instalados mediante el gestor de paquetes).
+- **SDL2** Se puede instalar mediante el gestor de paquetes (varía según la distribución de Linux usada).
 - **GCC** (incluido en la distribución).
 
 ---
@@ -49,14 +49,28 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
 
 ---
 
-## Compilación en Linux (Fedora)
+## Compilación en Linux
 
 1. **Instalar las dependencias:**
-   Abre una terminal y ejecuta:
+   Abre una terminal y ejecuta según tu distribución:
+   ###Fedora
    ```bash
    sudo dnf install codeblocks SDL2 SDL2-devel
    ```
-2. **(Opción 1) Usando Code::Blocks:**
+   ###Ubuntu/Debian
+   ```bash
+   sudo apt update
+   sudo apt install codeblocks libsdl2-dev
+   ```
+   ###Arch Linux / Manjaro
+   ```bash
+   sudo pacman -S codeblocks sdl2 sdl2_image sdl2_ttf sdl2_mixer
+   ```
+   ###OpenSUSE
+   ```bash
+   sudo zypper install codeblocks SDL2-devel
+   ```
+3. **(Opción 1) Usando Code::Blocks:**
    - Abre Code::Blocks y carga o crea tu proyecto.
    - Ve a **Settings → Compiler...** y, en la pestaña **Compiler Settings**, agrega en **Other options**:
      ```
@@ -68,7 +82,7 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
      ```
     - Compila y ejecuta.
 
-3. **(Opción 2) Usando el Makefile incluido**
+4. **(Opción 2) Usando el Makefile incluido**
    - Con la termninal, encontrándose en el directorio raíz que contiene este repositorio ejecuta:
      ```bash
      make
