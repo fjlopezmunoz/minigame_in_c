@@ -53,7 +53,8 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
 
 1. **Instalar las dependencias:**
    Abre una terminal y ejecuta según tu distribución:
-   `Fedora`
+
+   ``Fedora``
    ```bash
    sudo dnf install codeblocks SDL2 SDL2-devel
    ```
