@@ -1,0 +1,7 @@
+<map id="Colisiones.h" name="Colisiones.h">
+<area shape="rect" id="Node000001" title="Fichero de cabecera para poder usar las funciones de colisiones entre objetos 2D." alt="" coords="5,5,106,33"/>
+<area shape="rect" id="Node000002" href="$Pantalla_8h.html" title="Fichero de cabecera para poder usar las funciones del wrapper Pantalla." alt="" coords="13,81,98,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,34,58,65,53,65,53,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="8,157,103,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,109,58,141,53,141,53,109"/>
+</map>

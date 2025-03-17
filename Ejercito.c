@@ -79,7 +79,7 @@ void inserta_enemigo(ejercito e, double x, double y, double w, double h)
             e->vueltarray = 1;
         }
     }
-    if (e->total==e->max) //Si excede el máximo entonces dobla el tamaño.
+    if (e->total==e->max) //Si excede el mÃ¡ximo entonces dobla el tamaÃ±o.
     {
         e->maloptr = realloc(e->maloptr, 2*e->max*(sizeof(struct enemigo)));
         e->tope = e->max;

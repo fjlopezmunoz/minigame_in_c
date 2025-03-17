@@ -1,0 +1,5 @@
+<map id="Rafaga.h" name="Rafaga.h">
+<area shape="rect" id="Node000001" title="Fichero de cabecera para poder usar las funciones de manejo de rafagas." alt="" coords="7,5,86,33"/>
+<area shape="rect" id="Node000002" href="$Ejercito_8h.html" title="Fichero de cabecera para hacer uso de funciones que simplifiquen el manejo de varios enemigos." alt="" coords="5,81,88,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,49,49,81,44,81,44,49"/>
+</map>

@@ -5,9 +5,9 @@
 #include <math.h>
 
 
-// TIPOS PÚBLICOS
+// TIPOS PÃšBLICOS
 
-// La estructura Imagen es la implementación interna del TDA Imagen ofrecido de forma pública por la biblioteca.
+// La estructura Imagen es la implementaciÃ³n interna del TDA Imagen ofrecido de forma pÃºblica por la biblioteca.
 struct ImagenRep
 {
     SDL_Surface *surface;
@@ -16,7 +16,7 @@ struct ImagenRep
 
 // TIPOS PRIVADOS
 
-// El tipo Pantalla (que es privado al módulo de la biblioteca) representa todos los datos que mantienen el estado de los distintos componentes que permiten dibujar en la pantalla gráfica. Desde la ventana hasta los colores usados para dibujar las líneas o rellenar las figuras, pasando por las texturas y mecanismos de renderizado utilizados.
+// El tipo Pantalla (que es privado al mÃ³dulo de la biblioteca) representa todos los datos que mantienen el estado de los distintos componentes que permiten dibujar en la pantalla grÃ¡fica. Desde la ventana hasta los colores usados para dibujar las lÃ­neas o rellenar las figuras, pasando por las texturas y mecanismos de renderizado utilizados.
 typedef struct Pantalla
 {
     int width;
@@ -31,20 +31,20 @@ typedef struct Pantalla
 
 // VARIABLES PRIVADAS
 
-// La variable pantalla (que es privada al módulo de la biblioteca) mantiene el estado de la ventana donde se mostrarán todas las primitivas gráficas que se lleven a cabo.
+// La variable pantalla (que es privada al mÃ³dulo de la biblioteca) mantiene el estado de la ventana donde se mostrarÃ¡n todas las primitivas grÃ¡ficas que se lleven a cabo.
 static Pantalla pantalla;
 
 
 // FUNCIONES PRIVADAS
 
-// Función privada para gestión de errores SDL.
+// FunciÃ³n privada para gestiÃ³n de errores SDL.
 void Pantalla_Error()
 {
     printf("%s\n", SDL_GetError());
     exit(EXIT_FAILURE);
 }
 
-// Esta función privada se encarga de capturar el evento de cierre de la ventana
+// Esta funciÃ³n privada se encarga de capturar el evento de cierre de la ventana
 static int manejador(void *userdata, const SDL_Event *event)
 {
     if ( (event->type == SDL_APP_TERMINATING || event->type == SDL_QUIT) && pantalla.active )
@@ -61,14 +61,14 @@ static int manejador(void *userdata, const SDL_Event *event)
 }
 
 
-// FUNCIONES PÚBLICAS
+// FUNCIONES PÃšBLICAS
 
 void Pantalla_Crea(char titulo[], int w, int h)
 {
     // Initialize SDL.
     if (SDL_Init(SDL_INIT_VIDEO) < 0) Pantalla_Error();
 
-    // Crea la ventana donde se dibujará
+    // Crea la ventana donde se dibujarÃ¡
     pantalla.window = SDL_CreateWindow(titulo, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, w, h, 0);
     if (pantalla.window==NULL) Pantalla_Error();
 
@@ -190,7 +190,7 @@ void Pantalla_DibujaLinea(double x1, double y1, double x2, double y2)
 void Pantalla_DibujaTriangulo(double x1, double y1, double x2, double y2, double x3, double y3)
 {
     if (SDL_SetRenderDrawColor(pantalla.renderer, pantalla.fillColor.r, pantalla.fillColor.g, pantalla.fillColor.b, pantalla.fillColor.a)==-1) Pantalla_Error();
-    // Reordenar puntos para que el 1 sea el más alto y poder dibujar líneas horizontales desde 1 hacia 2 y 3
+    // Reordenar puntos para que el 1 sea el mÃ¡s alto y poder dibujar lÃ­neas horizontales desde 1 hacia 2 y 3
     if (y1 > y2)
     {
         double t = x1;
@@ -223,7 +223,7 @@ void Pantalla_DibujaTriangulo(double x1, double y1, double x2, double y2, double
     double dxl = (x2-x1)/(y2-y1); // Incremento iquierdo
     double dxr = (x3-x1)/(y3-y1);
     int y = y1; // altura inicial
-    // Primera mitad del triángulo
+    // Primera mitad del triÃ¡ngulo
     y2 = floor(y2); // Para no pasarnos de la mitad exacta en pixels
     while ( y < y2 )
     {
@@ -233,7 +233,7 @@ void Pantalla_DibujaTriangulo(double x1, double y1, double x2, double y2, double
         y = y + 1;
     }
     xl = x2;
-    // Segunda mitad del triángulo
+    // Segunda mitad del triÃ¡ngulo
     dxl = (x3-xl)/(y3-y);
     dxr = (x3-xr)/(y3-y);
     while ( y < y3 )
@@ -267,7 +267,7 @@ void Pantalla_DibujaCirculo(double x, double y, double r)
 {
     int dy;
     r=round(r);
-    // Dibujar círculo
+    // Dibujar cÃ­rculo
     if (SDL_SetRenderDrawColor(pantalla.renderer, pantalla.fillColor.r, pantalla.fillColor.g, pantalla.fillColor.b, pantalla.fillColor.a)==-1) Pantalla_Error();
     for (dy = 0; dy <= r; dy++)
     {
@@ -467,7 +467,7 @@ char *Pantalla_LeeTexto(int x, int y, int max, char *titulo)
 
             switch( event.type )
             {
-            // Evento de tipo pulsación de tecla
+            // Evento de tipo pulsaciÃ³n de tecla
             case SDL_KEYDOWN:
                 // Tecla de borrado
                 if (event.key.keysym.sym == SDLK_BACKSPACE && length > 0  && cursor > 0)
@@ -502,7 +502,7 @@ char *Pantalla_LeeTexto(int x, int y, int max, char *titulo)
                     cursor++;
                 }
                 break;
-            // Evento de tipo inserción de texto
+            // Evento de tipo inserciÃ³n de texto
             case SDL_TEXTINPUT:
             {
                 // Contar letras del textinput
@@ -510,11 +510,11 @@ char *Pantalla_LeeTexto(int x, int y, int max, char *titulo)
                 char *textptr = event.text.text;
                 for ( char *iptr = event.text.text ; *iptr ; iptr++ ) eventlength++;
                 if ( eventlength > 1 ) textptr++;
-                // Insertar texto en la posición del cursor sólo si cabe
+                // Insertar texto en la posiciÃ³n del cursor sÃ³lo si cabe
                 if ( *textptr > 0 && length < max )
                 {
-                    /* Si el cursor no está al final primero desplazamos las letras situadas a
-                    continuación del cursor un espacio a la derecha */
+                    /* Si el cursor no estÃ¡ al final primero desplazamos las letras situadas a
+                    continuaciÃ³n del cursor un espacio a la derecha */
                     if (cursor < length)
                     {
                         for ( int i = length ; i >= cursor ; i--)
@@ -522,7 +522,7 @@ char *Pantalla_LeeTexto(int x, int y, int max, char *titulo)
                             text[i+1] = text[i];
                         }
                     }
-                    // Después añadimos el texto a incluir filtrando los caracteres especiales
+                    // DespuÃ©s aÃ±adimos el texto a incluir filtrando los caracteres especiales
                     for ( char *iptr = textptr ; *iptr ; iptr++)
                     {
                         text[cursor] = *iptr;
@@ -699,7 +699,7 @@ Imagen Pantalla_ImagenLee(char *fichero, int transparencia)
 
     Imagen imagen = calloc(1, sizeof(struct ImagenRep));
 
-    // Guardamos la superficie pero en convirtiÃ©ndola primero al formato que hemos usado para crear la ventana
+    // Guardamos la superficie pero en convirtiÃƒÂ©ndola primero al formato que hemos usado para crear la ventana
     SDL_PixelFormat *pixelformat = SDL_AllocFormat(SDL_PIXELFORMAT_ARGB8888);
     if (pixelformat==NULL) Pantalla_Error();
 

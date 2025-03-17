@@ -126,8 +126,8 @@ int jugarpartida()
     inserta_enemigo(e, id, -20 , w2, h2);
     id = rand() %(rx+1);
     inserta_enemigo(e, id, -20 , w2, h2);
-    sprintf(str2, "vidas : %d\0", vidas);
-    sprintf(str, "puntos : %d\0", puntos);
+    sprintf(str2, "vidas : %d", vidas);
+    sprintf(str, "puntos : %d", puntos);
     while (Pantalla_Activa() && vidas>0)
     {
         if (Pantalla_TeclaPulsada(SDL_SCANCODE_RIGHT)&& heroe_get_xr_left(h)+heroe_get_anchotanque(h)<rx)
@@ -181,7 +181,7 @@ int jugarpartida()
         if(colision_ejercito_heroe(e,h))
         {
             vidas = vidas -1;
-            sprintf(str2, "vidas : %d\0", vidas);
+            sprintf(str2, "vidas : %d", vidas);
             Pantalla_DibujaTexto(str2,529,10);
             Pantalla_DibujaTexto(str,520,25);
         }
@@ -198,7 +198,7 @@ int jugarpartida()
         if(colision_ejercito_rafaga(e,r))
         {
             puntos = puntos + 1;
-            sprintf(str, "puntos : %d\0", puntos);
+            sprintf(str, "puntos : %d", puntos);
         }
         Pantalla_DibujaTexto(str2,529,10);
         Pantalla_DibujaTexto(str,520,25);

@@ -1,0 +1,5 @@
+<map id="Pantalla.h" name="Pantalla.h">
+<area shape="rect" id="Node000001" title="Fichero de cabecera para poder usar las funciones del wrapper Pantalla." alt="" coords="10,5,96,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,101,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,34,56,65,50,65,50,34"/>
+</map>

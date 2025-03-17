@@ -6,3 +6,5 @@ piedras_picudas
 record.txt
 bin/
 obj/
+latex/
+Doxyfile

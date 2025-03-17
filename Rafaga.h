@@ -7,7 +7,7 @@
  \mainpage Rafaga
 
 La biblioteca rafaga contiene funciones que manejan rafagas de objetos 2D.
-Permite hacer largas cadenas de balas (incluídas en el módulo Colisiones.h), olvidándose de su creación y manejo una a una.
+Permite hacer largas cadenas de balas (incluÃ­das en el mÃ³dulo Colisiones.h), olvidÃ¡ndose de su creaciÃ³n y manejo una a una.
 
 
 
@@ -23,56 +23,56 @@ Permite hacer largas cadenas de balas (incluídas en el módulo Colisiones.h), olv
 typedef struct Rafagarep * Rafaga;
 
 /**
-  \brief Crea una rafaga a la que añadirle balas.
+  \brief Crea una rafaga a la que aÃ±adirle balas.
 
-  Debe ser ejecutada antes que ninguna otra función que haga uso de rafagas.
+  Debe ser ejecutada antes que ninguna otra funciÃ³n que haga uso de rafagas.
  */
 Rafaga crea_rafaga();
 
 /**
   \brief Libera la memoria reservada para la rafaga y sus balas.
 
-  Debe ser ejecutada en último lugar. Si se ejecuta alguna función que haga uso de rafagas después de esta se producirá un error en tiempo de ejecución.
+  Debe ser ejecutada en Ãºltimo lugar. Si se ejecuta alguna funciÃ³n que haga uso de rafagas despuÃ©s de esta se producirÃ¡ un error en tiempo de ejecuciÃ³n.
   \param r La rafaga a liberar.
  */
 void libera_rafaga( Rafaga r);
 
 /**
-  \brief Mueve todas las balas presentes en la rafaga cambiando su posición en función de su propia velocidad.
+  \brief Mueve todas las balas presentes en la rafaga cambiando su posiciÃ³n en funciÃ³n de su propia velocidad.
   \param La rafaga a mover.
 */
 void mueve_rafaga(Rafaga r);
 
 /**
-  \pre La bala debe de haber sido creada con su correspondiente función y de igual manera la rafaga con crea_rafaga.
-  \brief Añade la bala a la rafaga de balas provista.
+  \pre La bala debe de haber sido creada con su correspondiente funciÃ³n y de igual manera la rafaga con crea_rafaga.
+  \brief AÃ±ade la bala a la rafaga de balas provista.
   \param r La rafaga sobre la que se trabaja.
   \param b La bala a insertar.
 */
 void inserta_rafaga( Rafaga r, Bala b);
 
 /**
-  \pre No se debe ejecutar antes de Pantalla_Crea del módulo pantalla.Si se desea ver movimiento de la rafaga se debe ejecutar antes mueve_rafaga y debe también haber sido creada con crea_rafaga
+  \pre No se debe ejecutar antes de Pantalla_Crea del mÃ³dulo pantalla.Si se desea ver movimiento de la rafaga se debe ejecutar antes mueve_rafaga y debe tambiÃ©n haber sido creada con crea_rafaga
   \brief Dibuja las balas en pantalla pertenecientes a la rafaga.
   \param r La rafaga a dibujar.
 */
 void dibuja_rafaga(Rafaga r);
 
 /**
-  \pre  La rafaga debe de existir, creándola con crea_rafaga.
-  \brief Comprueba si hay colisión entre un objeto rectangular y todas las balas de la rafaga; si se ha producido, las balas que lo hayan hecho serán eliminadas de la rafaga.
+  \pre  La rafaga debe de existir, creÃ¡ndola con crea_rafaga.
+  \brief Comprueba si hay colisiÃ³n entre un objeto rectangular y todas las balas de la rafaga; si se ha producido, las balas que lo hayan hecho serÃ¡n eliminadas de la rafaga.
   \param r La rafaga sobre la que se trabaja.
-  \param x Posición en el eje x de la esquina superior izq. del rectángulo.
-  \param y Posición en el eje y de la esquina superior izq. del rectángulo.
-  \param w Anchura del rectángulo.
-  \param h Altura del rectángulo.
-  \return 1 si se ha producido alguna colisión, 0 en caso contrario.
+  \param x PosiciÃ³n en el eje x de la esquina superior izq. del rectÃ¡ngulo.
+  \param y PosiciÃ³n en el eje y de la esquina superior izq. del rectÃ¡ngulo.
+  \param w Anchura del rectÃ¡ngulo.
+  \param h Altura del rectÃ¡ngulo.
+  \return 1 si se ha producido alguna colisiÃ³n, 0 en caso contrario.
 */
 int colision_rafaga(Rafaga r, double x, double y, double w, double h);
 
 /**
-  \pre La rafaga debe de existir, creándola con crea_rafaga.
-  \brief Devuelve el número de balas presente en la rafaga.
+  \pre La rafaga debe de existir, creÃ¡ndola con crea_rafaga.
+  \brief Devuelve el nÃºmero de balas presente en la rafaga.
   \param r La rafaga sobre la que se trabaja.
   \return no. de balas en la rafaga.
 */

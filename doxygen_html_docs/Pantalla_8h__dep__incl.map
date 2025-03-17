@@ -1,0 +1,12 @@
+<map id="Pantalla.h" name="Pantalla.h">
+<area shape="rect" id="Node000001" title="Fichero de cabecera para poder usar las funciones del wrapper Pantalla." alt="" coords="101,5,186,33"/>
+<area shape="rect" id="Node000002" href="$Colisiones_8h.html" title="Fichero de cabecera para poder usar las funciones de colisiones entre objetos 2D." alt="" coords="5,81,106,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,45,73,83,69,79,114,41"/>
+<area shape="rect" id="Node000003" href="$Ejercito_8h.html" title="Fichero de cabecera para hacer uso de funciones que simplifiquen el manejo de varios enemigos." alt="" coords="84,232,166,260"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="160,46,172,75,182,110,186,148,179,185,163,213,143,234,139,230,159,210,174,183,181,148,177,111,167,77,155,48"/>
+<area shape="rect" id="Node000004" href="$Rafaga_8h.html" title="Fichero de cabecera para poder usar las funciones de manejo de rafagas." alt="" coords="85,157,164,184"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="143,49,129,156,124,156,137,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,124,65,153,75,183,93,209,112,230,108,234,88,213,70,186,60,154,55,124"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="80,118,114,154,111,158,76,122"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="128,200,128,232,122,232,122,200"/>
+</map>
