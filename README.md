@@ -8,9 +8,9 @@ Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se deta
 - **Compilador de C para Windows**: Como MSVC, Clang, Cygwin...Se puede utilizar el que se desee, aquí se detalla como hacerlo con el compilador MinGW que incluye el IDE [Code::Blocks](https://www.codeblocks.org/)
 - **[SDL2](https://wiki.libsdl.org/SDL2/Installation)** para Windows
 
-### Linux (Fedora)
+### Linux
 - **Code::Blocks** (opcional, también se puede compilar desde terminal).
-- **SDL2** Se puede instalar mediante el gestor de paquetes (varía según la distribución de Linux usada).
+- **SDL2** (en la mayoría de distribuciones, instalable desde su gestor de paquetes).
 - **GCC** (incluido en la distribución).
 
 ---
@@ -53,20 +53,20 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
 
 1. **Instalar las dependencias:**
    Abre una terminal y ejecuta según tu distribución:
-   ###Fedora
+   `Fedora`
    ```bash
    sudo dnf install codeblocks SDL2 SDL2-devel
    ```
-   ###Ubuntu/Debian
+   `Ubuntu` / `Debian`
    ```bash
    sudo apt update
    sudo apt install codeblocks libsdl2-dev
    ```
-   ###Arch Linux / Manjaro
+   `Arch Linux` / `Manjaro`
    ```bash
    sudo pacman -S codeblocks sdl2 sdl2_image sdl2_ttf sdl2_mixer
    ```
-   ###OpenSUSE
+   `OpenSUSE`
    ```bash
    sudo zypper install codeblocks SDL2-devel
    ```
