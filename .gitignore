@@ -1,0 +1,8 @@
+*.layout
+*.depend
+*.o
+*.cbp
+piedras_picudas
+record.txt
+bin/
+obj/
