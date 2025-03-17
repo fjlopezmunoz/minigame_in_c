@@ -5,8 +5,8 @@ Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se deta
 ## Requisitos
 
 ### Windows
-- **Code::Blocks** con MinGW (por ejemplo, `codeblocks-13.12mingw-setup.exe`).
-- **SDL2** para Windows (por ejemplo, `SDL2-devel-2.0.3-mingw.tar.gz`).
+- **Compilador de C para Windows**: Como MSVC, Clang, Cygwin...Se puede utilizar el que se desee, aquí se detalla como hacerlo con el compilador MinGW que incluye el IDE [Code::Blocks](https://www.codeblocks.org/)
+- **[SDL2](https://wiki.libsdl.org/SDL2/Installation)** para Windows
 
 ### Linux (Fedora)
 - **Code::Blocks** (opcional, también se puede compilar desde terminal).
@@ -17,17 +17,19 @@ Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se deta
 
 ## Compilación en Windows
 
+A continuación se indican una serie de pasos para llevar a cabo la compilación mediante Code::Blocks:
+
 1. **Descargar e instalar Code::Blocks:**
-   - Descarga el instalador que incluya MinGW (ej.: `codeblocks-13.12mingw-setup.exe`) y sigue el proceso de instalación.
+   - Descarga desde la web de [Codeblocks](https://www.codeblocks.org/downloads/binaries/) el instalador que incluya MinGW (`codeblocks-X.Xmingw-setup.exe`) y sigue el proceso de instalación.
 
 2. **Descargar y configurar SDL2:**
-   - Descarga la versión de SDL2 para Windows (por ejemplo, `SDL2-devel-2.0.3-mingw.tar.gz`) y descomprímela.
-   - Copia el archivo `SDL2.dll` (ubicado en `SDL2-2.0.3\i686-w64-mingw32\bin`) a las siguientes carpetas:
+   - Descarga la versión de [SDL2 para Windows](SDL2-devel-2.X.X-mingw.tar.gz) (`SDL2-devel-X.X.X-mingw.tar.gz`) y descomprímela.
+   - Copia el archivo `SDL2.dll` (ubicado en `SDL2-2.X.X\i686-w64-mingw32\bin`) a las siguientes carpetas:
      - `C:\Windows\System32`
      - `C:\Windows\SysWOW64`
-   - Copia el contenido de la carpeta `SDL2-2.0.3\i686-w64-mingw32\lib` a la carpeta de librerías de Code::Blocks:
+   - Copia el contenido de la carpeta `SDL2-2.X.X\i686-w64-mingw32\lib` a la carpeta de librerías de Code::Blocks:
      - `C:\Archivos de programa (x86)\CodeBlocks\MinGW\lib`
-   - Copia la carpeta `SDL2` de `SDL2-2.0.3\i686-w64-mingw32\include` a la carpeta de includes:
+   - Copia la carpeta `SDL2` de `SDL2-2.X.X\i686-w64-mingw32\include` a la carpeta de includes:
      - `C:\Archivos de programa (x86)\CodeBlocks\MinGW\include`
 
 3. **Configurar Code::Blocks:**
@@ -66,7 +68,7 @@ Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se deta
      ```
     - Compila y ejecuta.
 
-3. **(Opción 1) Usando make**
+3. **(Opción 2) Usando el Makefile incluido**
    - Con la termninal, encontrándose en el directorio raíz que contiene este repositorio ejecuta:
      ```bash
      make
