@@ -81,7 +81,7 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
      ```
    - En la pestaña **Linker Settings**, en **Other linker options**, agrega:
      ```
-     `sdl2-config --cflags --libs` -lm
+     -lSDL2main -lSDL2 -lm
      ```
     - Compila y ejecuta.
 
