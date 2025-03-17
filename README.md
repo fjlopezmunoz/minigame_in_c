@@ -54,20 +54,20 @@ A continuación se indican una serie de pasos para llevar a cabo la compilación
 1. **Instalar las dependencias:**
    Abre una terminal y ejecuta según tu distribución:
 
-   ``Fedora``
+   **Fedora**
    ```bash
    sudo dnf install codeblocks SDL2 SDL2-devel
    ```
-   `Ubuntu` / `Debian`
+   **Ubuntu** / **Debian**
    ```bash
    sudo apt update
    sudo apt install codeblocks libsdl2-dev
    ```
-   `Arch Linux` / `Manjaro`
+   **Arch Linux** / **Manjaro**
    ```bash
    sudo pacman -S codeblocks sdl2 sdl2_image sdl2_ttf sdl2_mixer
    ```
-   `OpenSUSE`
+   **OpenSUSE**
    ```bash
    sudo zypper install codeblocks SDL2-devel
    ```
