@@ -2,7 +2,7 @@
 
 ![Sección Ayuda](./ayuda.bmp) ![Gameplay](./gameplay.gif)
 
-Este proyecto es una versión adaptada del mítico Space Invaders. Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux**.
+Este proyecto es una versión adaptada del mítico Space Invaders realizada mientras cursaba la asignatura Tecnología de la Programación del grado de Informática. De hecho, la autoría de la biblioteca Pantalla aquí presente pertenece a mi profesor Jose Antonio Sánchez Laguna ([jlaguna](https://ants.inf.um.es/staff/jlaguna/)). Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux**.
 
 ## Requisitos
 
