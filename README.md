@@ -22,7 +22,7 @@ Este proyecto es una versión adaptada del mítico Space Invaders realizada mien
 A continuación se indican una serie de pasos para llevar a cabo la compilación mediante Code::Blocks:
 
 1. **Descargar e instalar Code::Blocks:**
-   - Descarga desde la web de [Codeblocks](https://www.codeblocks.org/downloads/binaries/) el instalador que incluya MinGW (`codeblocks-X.Xmingw-setup.exe`) y sigue el proceso de instalación.
+   - Descarga desde la web de [Code::Blocks](https://www.codeblocks.org/downloads/binaries/) el instalador que incluya MinGW (`codeblocks-X.Xmingw-setup.exe`) y sigue el proceso de instalación.
 
 2. **Descargar y configurar SDL2:**
    - Descarga la versión de [SDL2 para Windows](SDL2-devel-2.X.X-mingw.tar.gz) (`SDL2-devel-2.X.X-mingw.tar.gz`) y descomprímela.
