@@ -2,7 +2,7 @@
 
 ![Sección Ayuda](./ayuda.bmp) ![Gameplay](./gameplay.gif)
 
-Este proyecto es una versión adaptada del mítico Space Invaders realizada mientras cursaba la asignatura Tecnología de la Programación del Grado de Informática de la Universidad de Murcia. De hecho, la autoría de la biblioteca Pantalla aquí presente pertenece a mi profesor Jose Antonio Sánchez Laguna ([jlaguna](https://ants.inf.um.es/staff/jlaguna/)) junto a Fernando Jiménez Barrionuevo y Gracia Sánchez Carpena. Documentación más detallada del proyecto en HTML (generada con la herramienta Doxygen) se puede encontrar en [doxygen_html_docs](./doxygen_html_docs) (Recomendable abrir en el navegador el [index.html](./doxygen_html_docs/index.html) para comenzar a visualizarla). Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux**.
+Este proyecto es una versión adaptada del mítico Space Invaders realizada mientras cursaba la asignatura Tecnología de la Programación del Grado de Informática de la Universidad de Murcia. De hecho, la autoría de la biblioteca Pantalla aquí presente pertenece a mi profesor Jose Antonio Sánchez Laguna ([jlaguna](https://ants.inf.um.es/staff/jlaguna/)) junto a Fernando Jiménez Barrionuevo y Gracia Sánchez Carpena. Documentación más detallada del proyecto en HTML (generada con la herramienta Doxygen) se puede encontrar en [doxygen_html_docs](./doxygen_html_docs) (Recomendable abrir en el navegador el [index.html](./doxygen_html_docs/index.html) para comenzar a visualizar la documentación). Aquí se detallan los pasos necesarios para compilar y ejecutar la aplicación en **Windows** y **Linux**:
 
 ## Requisitos
 
