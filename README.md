@@ -1,4 +1,4 @@
-# MiniProyecto-Videojuego en C con SDL2 "Piedras Picudas"
+# Piedras Picudas: Videojuego en C con SDL2
 
 ![Sección Ayuda](./ayuda.bmp) ![Gameplay](./gameplay.gif)
 
